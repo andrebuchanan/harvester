@@ -11,7 +11,7 @@
   "dependencies": {
     "request": "2.25.x",
     "express": "3.3.x",
-    "node-getopt": "2.3.x"
+    "node-getopt": "0.2.x"
   },
   "engines": {
     "node": ">=0.10"
