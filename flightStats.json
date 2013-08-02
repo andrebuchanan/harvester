@@ -1,0 +1,381 @@
+{
+ "request": {
+  "airline": {
+   "requestedCode": "QF",
+   "fsCode": "QF"
+  },
+  "codeshares": {
+   "requested": "true",
+   "interpreted": true
+  },
+  "includeFlightPlan": {
+   "requested": "false",
+   "interpreted": false
+  },
+  "maxPositions": {
+   "requested": "2",
+   "interpreted": 2
+  },
+  "maxPositionAgeMinutes": {},
+  "codeType": {},
+  "maxFlights": {
+   "requested": "5",
+   "interpreted": 5
+  },
+  "extendedOptions": {},
+  "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/tracks/QF"
+ },
+ "appendix": {
+  "airlines": [
+   {
+    "fs": "QF",
+    "iata": "QF",
+    "icao": "QFA",
+    "name": "Qantas",
+    "active": true
+   },
+   {
+    "fs": "JQ",
+    "iata": "JQ",
+    "icao": "JST",
+    "name": "Jetstar Airways",
+    "active": true
+   },
+   {
+    "fs": "EK",
+    "iata": "EK",
+    "icao": "UAE",
+    "name": "Emirates",
+    "active": true
+   }
+  ],
+  "airports": [
+   {
+    "fs": "ATH",
+    "iata": "ATH",
+    "icao": "LGAV",
+    "name": "Eleftherios Venizelos International Airport",
+    "city": "Athens",
+    "cityCode": "ATH",
+    "countryCode": "GR",
+    "countryName": "Greece",
+    "regionName": "Europe",
+    "timeZoneRegionName": "Europe/Athens",
+    "localTime": "2013-07-24T09:37:50.757",
+    "utcOffsetHours": 3,
+    "latitude": 37.93635,
+    "longitude": 23.946486,
+    "elevationFeet": 68,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/ATH?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/ATH?codeType=fs"
+   },
+   {
+    "fs": "CNS",
+    "iata": "CNS",
+    "icao": "YBCS",
+    "name": "Cairns Airport",
+    "city": "Cairns",
+    "cityCode": "CNS",
+    "stateCode": "QLD",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "regionName": "Oceania",
+    "timeZoneRegionName": "Australia/Brisbane",
+    "localTime": "2013-07-24T16:37:50.757",
+    "utcOffsetHours": 10,
+    "latitude": -16.876538,
+    "longitude": 145.754041,
+    "elevationFeet": 10,
+    "classification": 3,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/CNS?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/CNS?codeType=fs"
+   },
+   {
+    "fs": "SYD",
+    "iata": "SYD",
+    "icao": "YSSY",
+    "name": "Sydney (Kingsford Smith) Airport",
+    "city": "Sydney",
+    "cityCode": "SYD",
+    "stateCode": "NSW",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "regionName": "Oceania",
+    "timeZoneRegionName": "Australia/Sydney",
+    "localTime": "2013-07-24T16:37:50.757",
+    "utcOffsetHours": 10,
+    "latitude": -33.932922,
+    "longitude": 151.179898,
+    "elevationFeet": 21,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/SYD?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/SYD?codeType=fs"
+   },
+   {
+    "fs": "PER",
+    "iata": "PER",
+    "icao": "YPPH",
+    "name": "Perth Airport",
+    "city": "Perth",
+    "cityCode": "PER",
+    "stateCode": "WA",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "regionName": "Oceania",
+    "timeZoneRegionName": "Australia/Perth",
+    "localTime": "2013-07-24T14:37:50.756",
+    "utcOffsetHours": 8,
+    "latitude": -31.933604,
+    "longitude": 115.960236,
+    "elevationFeet": 67,
+    "classification": 2,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/PER?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/PER?codeType=fs"
+   },
+   {
+    "fs": "DXB",
+    "iata": "DXB",
+    "icao": "OMDB",
+    "name": "Dubai Airport",
+    "city": "Dubai",
+    "cityCode": "DXB",
+    "countryCode": "AE",
+    "countryName": "United Arab Emirates",
+    "regionName": "Middle East",
+    "timeZoneRegionName": "Asia/Dubai",
+    "localTime": "2013-07-24T10:37:50.756",
+    "utcOffsetHours": 4,
+    "latitude": 25.248664,
+    "longitude": 55.352916,
+    "elevationFeet": 34,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/DXB?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/DXB?codeType=fs"
+   },
+   {
+    "fs": "FCO",
+    "iata": "FCO",
+    "icao": "LIRF",
+    "name": "Leonardo da Vinci-Fiumicino Airport",
+    "city": "Rome",
+    "cityCode": "ROM",
+    "countryCode": "IT",
+    "countryName": "Italy",
+    "regionName": "Europe",
+    "timeZoneRegionName": "Europe/Rome",
+    "localTime": "2013-07-24T08:37:50.756",
+    "utcOffsetHours": 2,
+    "latitude": 41.794594,
+    "longitude": 12.250346,
+    "elevationFeet": 14,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/FCO?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/FCO?codeType=fs"
+   },
+   {
+    "fs": "MEL",
+    "iata": "MEL",
+    "icao": "YMML",
+    "name": "Tullamarine Airport",
+    "city": "Melbourne",
+    "cityCode": "MEL",
+    "stateCode": "VIC",
+    "countryCode": "AU",
+    "countryName": "Australia",
+    "regionName": "Oceania",
+    "timeZoneRegionName": "Australia/Sydney",
+    "localTime": "2013-07-24T16:37:50.757",
+    "utcOffsetHours": 10,
+    "latitude": -37.669611,
+    "longitude": 144.849777,
+    "elevationFeet": 434,
+    "classification": 1,
+    "active": true,
+    "delayIndexUrl": "https://api.flightstats.com/flex/delayindex/rest/v1/json/airports/MEL?codeType=fs",
+    "weatherUrl": "https://api.flightstats.com/flex/weather/rest/v1/json/all/MEL?codeType=fs"
+   }
+  ]
+ },
+ "flightTracks": [
+  {
+   "flightId": 303795919,
+   "carrierFsCode": "EK",
+   "flightNumber": "97",
+   "tailNumber": "A6-EDF",
+   "callsign": "UAE97",
+   "departureAirportFsCode": "DXB",
+   "arrivalAirportFsCode": "FCO",
+   "departureDate": {
+    "dateLocal": "2013-07-24T09:10:00.000",
+    "dateUtc": "2013-07-24T05:10:00.000Z"
+   },
+   "equipment": "A388",
+   "bearing": 301.6036955096014,
+   "heading": 318.0134249079182,
+   "positions": [
+    {
+     "lon": 47.33789825439453,
+     "lat": 30.561599731445312,
+     "speedMph": 564,
+     "altitudeFt": 40000,
+     "source": "AirNav",
+     "date": "2013-07-24T06:28:55.000Z"
+    },
+    {
+     "lon": 47.56480026245117,
+     "lat": 30.34469985961914,
+     "speedMph": 564,
+     "altitudeFt": 40000,
+     "source": "AirNav",
+     "date": "2013-07-24T06:26:45.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 303796134,
+   "carrierFsCode": "EK",
+   "flightNumber": "424",
+   "tailNumber": "A6-EBU",
+   "callsign": "UAE424",
+   "departureAirportFsCode": "DXB",
+   "arrivalAirportFsCode": "PER",
+   "departureDate": {
+    "dateLocal": "2013-07-24T10:05:00.000",
+    "dateUtc": "2013-07-24T06:05:00.000Z"
+   },
+   "equipment": "B77W",
+   "delayMinutes": 5,
+   "bearing": 131.52960762145239,
+   "heading": 235.91283391717775,
+   "positions": [
+    {
+     "lon": 55.24580001831055,
+     "lat": 25.277000427246094,
+     "speedMph": 247,
+     "altitudeFt": 3675,
+     "source": "AirNav",
+     "date": "2013-07-24T06:29:48.000Z"
+    },
+    {
+     "lon": 55.25740051269531,
+     "lat": 25.284099578857422,
+     "speedMph": 245,
+     "altitudeFt": 3475,
+     "source": "AirNav",
+     "date": "2013-07-24T06:29:36.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 303824263,
+   "carrierFsCode": "QF",
+   "flightNumber": "468",
+   "tailNumber": "VH-OGL",
+   "callsign": "QFA468",
+   "departureAirportFsCode": "MEL",
+   "arrivalAirportFsCode": "SYD",
+   "departureDate": {
+    "dateLocal": "2013-07-24T16:15:00.000",
+    "dateUtc": "2013-07-24T06:15:00.000Z"
+   },
+   "equipment": "B763",
+   "bearing": 57.342167587768614,
+   "heading": 58.996386132987865,
+   "positions": [
+    {
+     "lon": 145.21800231933594,
+     "lat": -37.25519943237305,
+     "speedMph": 501,
+     "altitudeFt": 26200,
+     "source": "AirNav",
+     "date": "2013-07-24T06:30:16.000Z"
+    },
+    {
+     "lon": 145.06100463867188,
+     "lat": -37.33039855957031,
+     "speedMph": 479,
+     "altitudeFt": 22550,
+     "source": "AirNav",
+     "date": "2013-07-24T06:29:03.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 303795761,
+   "carrierFsCode": "EK",
+   "flightNumber": "105",
+   "tailNumber": "A6-EMN",
+   "callsign": "UAE105",
+   "departureAirportFsCode": "DXB",
+   "arrivalAirportFsCode": "ATH",
+   "departureDate": {
+    "dateLocal": "2013-07-24T10:05:00.000",
+    "dateUtc": "2013-07-24T06:05:00.000Z"
+   },
+   "equipment": "B773",
+   "delayMinutes": 3,
+   "bearing": 303.1305467683392,
+   "heading": 301.5837905150469,
+   "positions": [
+    {
+     "lon": 55.229400634765625,
+     "lat": 25.33139991760254,
+     "speedMph": 306,
+     "altitudeFt": 2825,
+     "source": "AirNav",
+     "date": "2013-07-24T06:31:14.000Z"
+    },
+    {
+     "lon": 55.247398376464844,
+     "lat": 25.321399688720703,
+     "speedMph": 298,
+     "altitudeFt": 2575,
+     "source": "AirNav",
+     "date": "2013-07-24T06:31:01.000Z"
+    }
+   ]
+  },
+  {
+   "flightId": 303786983,
+   "carrierFsCode": "JQ",
+   "flightNumber": "957",
+   "tailNumber": "VH-VQO",
+   "callsign": "JST957",
+   "departureAirportFsCode": "CNS",
+   "arrivalAirportFsCode": "SYD",
+   "departureDate": {
+    "dateLocal": "2013-07-24T14:55:00.000",
+    "dateUtc": "2013-07-24T04:55:00.000Z"
+   },
+   "equipment": "A320",
+   "delayMinutes": 22,
+   "bearing": 166.7047152660464,
+   "heading": 165.37423444774006,
+   "positions": [
+    {
+     "lon": 148.58200073242188,
+     "lat": -24.796300888061523,
+     "speedMph": 516,
+     "altitudeFt": 35025,
+     "source": "AirNav",
+     "date": "2013-07-24T06:32:43.000Z"
+    },
+    {
+     "lon": 148.5540008544922,
+     "lat": -24.69890022277832,
+     "speedMph": 518,
+     "altitudeFt": 35025,
+     "source": "AirNav",
+     "date": "2013-07-24T06:31:55.000Z"
+    }
+   ]
+  }
+ ]
+}

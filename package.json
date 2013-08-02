@@ -1,0 +1,19 @@
+{
+  "name": "harvester",
+  "description": "Get data from webservices and store in DB.",
+  "bin": {
+    "harvester": "./bin/harvester"
+  },
+  "scripts": {
+    "start": "node harvester.js"
+  },
+  "main": "./lib/harvester",
+  "dependencies": {
+    "request": "2.25.x",
+    "express": "3.3.x",
+    "node-getopt": "2.3.x"
+  },
+  "engines": {
+    "node": ">=0.10"
+  }
+}
