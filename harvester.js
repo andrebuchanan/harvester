@@ -21,4 +21,4 @@ harvey.thresh({
 });
 // XXX
 // Stop the thresher
-harvey.stopThresher();
+// harvey.stopThresher();
