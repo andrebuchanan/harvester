@@ -2,7 +2,8 @@
 var cmd = require("node-getopt").create([
   ["p", "port=", "Port on which to listen for data requests"],
   ["h", "help", "Display this help message"],
-  ["t", "thresh=", "Interval at which threshing is repeated"]
+  ["t", "thresh=", "Interval at which threshing is repeated"],
+  ["k", "fskey=", "FlightStats API key"]
 ]).bindHelp().parseSystem();
 
 // Deps
@@ -14,7 +15,10 @@ var
 reqHandler.listen(cmd.options.port || 3000);
 
 // Start threshing the internet crop.
-harvey.thresh(cmd.options.thresh);
+harvey.thresh({
+  threshInt: cmd.options.thresh,
+  fsKey: cmd.options.fskey
+});
 // XXX
 // Stop the thresher
 harvey.stopThresher();
