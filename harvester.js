@@ -17,4 +17,4 @@ reqHandler.listen(cmd.options.port || 3000);
 harvey.thresh(cmd.options.thresh);
 // XXX
 // Stop the thresher
-harvey.stopThresher();
+// harvey.stopThresher();
