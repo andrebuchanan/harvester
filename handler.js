@@ -4,9 +4,14 @@ var cmd = require("node-getopt").create([
   ["h", "help", "Display this help message"]
 ]).bindHelp().parseSystem();
 
-// Deps
+// Http request handler.
 var
-  reqHandler = require("./lib/requestHandler");
+  httpHandler = require("./lib/httpRequestHandler");
+  server      = require("http").createServer(httpHandler);
+
+// Web socket handler.
+var
+  wsHandler   = require("./lib/wsRequestHandler").listen(server);
 
 // Start the data request handler on designated or default port.
-reqHandler.listen(cmd.options.port || 3000);
+server.listen(cmd.options.port || 3000);
