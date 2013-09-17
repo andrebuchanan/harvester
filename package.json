@@ -14,7 +14,8 @@
     "node-getopt":      "0.2.x",
     "moment":           "2.1.x",
     "moment-timezone":  "0.0.2",
-    "socket.io":        "0.9.x"
+    "socket.io":        "0.9.x",
+    "ws":               "0.4.x"
   },
   "engines": {
     "node": ">=0.10"
