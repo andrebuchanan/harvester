@@ -1,5 +1,7 @@
 // Connect to the fids room.
-var fids = io.connect("http://localhost:3000/fids");
+var fids = io.connect("http://localhost:3000/fids?pass=123", {
+  "try multiple transports": false
+});
 
 fids.on("connect", function()
 {
