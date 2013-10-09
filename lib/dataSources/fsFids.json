@@ -1,6 +1,4 @@
 [
-  { "portCode": "MEL", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/MEL/departures" },
-  { "portCode": "MEL", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/MEL/arrivals" },
   { "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/arrivals" },
   { "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/departures" }
 ]
