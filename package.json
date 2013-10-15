@@ -15,7 +15,9 @@
     "moment":           "2.1.x",
     "moment-timezone":  "0.0.2",
     "socket.io":        "0.9.x",
-    "ws":               "0.4.x"
+    "ws":               "0.4.x",
+    "aws-sdk":          "1.8.x",
+    "async":            "0.2.x"
   },
   "engines": {
     "node": ">=0.10"
