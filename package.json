@@ -1,4 +1,5 @@
 {
+  "version": "0.1.0",
   "name": "harvester",
   "description": "Get data from webservices and store in DB.",
   "bin": {
