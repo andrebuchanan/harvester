@@ -1,3 +1,4 @@
 [
-  { "portCode": "SYD", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-33.9461/151.1772/200" }
+  { "portCode": "SYD", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-33.9461/151.1772/200" },
+  { "portCode": "HKG", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/22.308889/113.914444/200" }
 ]

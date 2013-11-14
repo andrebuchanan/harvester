@@ -1,4 +1,6 @@
 [
-  { "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/arrivals" },
-  { "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/departures" }
+  { "transition": "ARR", "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/arrivals" },
+  { "transition": "DEP", "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/departures" },
+  { "transition": "ARR", "portCode": "HKG", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/arrivals" },
+  { "transition": "DEP", "portCode": "HKG", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/departures" }
 ]
