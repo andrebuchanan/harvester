@@ -12,4 +12,5 @@ fids.on("connect", function()
 fids.on("fids", function(data)
 {
   console.log(data);
+  console.log(data);
 });
