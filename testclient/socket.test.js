@@ -1,16 +1,24 @@
-// Connect to the fids room.
-var fids = io.connect("http://localhost:3000/fids?pass=123", {
-  "try multiple transports": false
+// Deps.
+var
+  util            = require("util"),
+  ws              = require("ws");
+var
+  log       = util.log;
+
+var wsClient = new ws("http://localhost:3000");
+
+wsClient.on("open", function()
+{
+  wsClient.send(JSON.stringify({
+    "dataType": "fids",
+    "query": {
+      "fleet": "CX"
+    }
+  }));
 });
 
-fids.on("connect", function()
+wsClient.on("message", function(data, flags)
 {
-  fids.emit("fleet", { "fleet": "QF" });
-  fids.emit("fleet", { "fleet": "QF" });
-});
-
-fids.on("fids", function(data)
-{
-  console.log(data);
-  console.log(data);
+  log("client got message " + data);
+  wsClient.close();
 });
