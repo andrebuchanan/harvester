@@ -20,5 +20,6 @@ wsClient.on("open", function()
 wsClient.on("message", function(data, flags)
 {
   log("client got message " + data);
+  JSON.parse(data);
   wsClient.close();
 });
