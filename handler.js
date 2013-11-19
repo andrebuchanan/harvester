@@ -1,6 +1,6 @@
 // Command line options.
 var cmd = require("node-getopt").create([
-  ["p", "port=", "Port on which to listen for data requests"],
+  ["p", "port=ARG", "Port on which to listen for data requests"],
   ["t", "test", "Serve static content from testclient directory"],
   ["h", "help", "Display this help message"]
 ]).bindHelp().parseSystem();
