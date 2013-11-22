@@ -1,0 +1,3 @@
+[
+  { "enabled": true, "fleet": "VA", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/VA/dep/2013/11/22/0" }
+]
