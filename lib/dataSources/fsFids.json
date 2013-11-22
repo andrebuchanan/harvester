@@ -1,6 +1,10 @@
 [
-  { "transition": "ARR", "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/arrivals" },
-  { "transition": "DEP", "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/departures" },
-  { "transition": "ARR", "portCode": "HKG", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/arrivals" },
-  { "transition": "DEP", "portCode": "HKG", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/departures" }
+  { "enabled": true, "transition": "ARR", "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/arrivals" },
+  { "enabled": true, "transition": "DEP", "portCode": "SYD", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/departures" },
+  { "enabled": true, "transition": "ARR", "portCode": "LGW", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/LGW/arrivals" },
+  { "enabled": true, "transition": "DEP", "portCode": "LGW", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/LGW/departures" },
+  { "enabled": true, "transition": "ARR", "portCode": "LHR", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/LHR/arrivals" },
+  { "enabled": true, "transition": "DEP", "portCode": "LHR", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/LHR/departures" },
+  { "enabled": true, "transition": "ARR", "portCode": "AUH", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/AUH/arrivals" },
+  { "enabled": true, "transition": "DEP", "portCode": "AUH", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/AUH/departures" }
 ]
