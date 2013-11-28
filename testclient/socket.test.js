@@ -12,8 +12,10 @@ wsClient.on("open", function()
   wsClient.send(JSON.stringify({
     "dataType": "fids",
     "query": {
-      "fleet": "CX"
-    }
+      "fleet": "QF",
+      "gate": 1
+    },
+    "subscribe": 1
   }));
 });
 
@@ -21,5 +23,5 @@ wsClient.on("message", function(data, flags)
 {
   log("client got message " + data);
   JSON.parse(data);
-  wsClient.close();
+  // wsClient.close();
 });
