@@ -5,7 +5,7 @@ var
 var
   log       = util.log;
 
-var wsClient = new ws("http://localhost:3000");
+var wsClient = new ws("http://localhost:8888");
 
 wsClient.on("open", function()
 {
@@ -22,4 +22,5 @@ wsClient.on("open", function()
 wsClient.on("message", function(data, flags)
 {
   log("client got message of length: " + data.length);
+  log("message head: " + data.substr(0, 50));
 });
