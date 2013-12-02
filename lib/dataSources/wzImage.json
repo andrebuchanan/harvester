@@ -1,0 +1,3 @@
+[
+  { "enabled": true, "portCode": "SYD", "url": "http://geo.theweather.com.au/external/wms?bbox=150.1772,-34.9461,152.1772,-32.9461" }
+]
