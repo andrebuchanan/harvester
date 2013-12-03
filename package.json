@@ -10,15 +10,17 @@
   },
   "main": "./lib/harvester",
   "dependencies": {
-    "request":          "2.25.x",
-    "express":          "3.3.x",
-    "node-getopt":      "0.2.x",
-    "moment":           "2.1.x",
-    "moment-timezone":  "0.0.2",
-    "socket.io":        "0.9.x",
-    "ws":               "0.4.x",
-    "aws-sdk":          "1.8.x",
-    "async":            "0.2.x"
+    "request": "2.25.x",
+    "express": "3.3.x",
+    "node-getopt": "0.2.x",
+    "moment": "2.1.x",
+    "moment-timezone": "0.0.2",
+    "socket.io": "0.9.x",
+    "ws": "0.4.x",
+    "aws-sdk": "1.8.x",
+    "async": "0.2.x",
+    "redis": "~0.9.1",
+    "hiredis": "~0.1.15"
   },
   "engines": {
     "node": ">=0.10"
