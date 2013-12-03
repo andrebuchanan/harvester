@@ -1,3 +1,4 @@
 [
-  { "enabled": true, "portCode": "SYD", "url": "http://geo.theweather.com.au/external/wms?bbox=150.1772,-34.9461,152.1772,-32.9461" }
+  { "enabled": true, "portCode": "SYD", "weather": "composite", "url": "http://geo.theweather.com.au/external/wms?bbox=150.1772,-34.9461,152.1772,-32.9461&layers=wz:radar_composite_latest" },
+  { "enabled": true, "portCode": "SYD", "weather": "lightning", "url": "http://geo.theweather.com.au/external/wms?bbox=150.1772,-34.9461,152.1772,-32.9461&layers=wz:lightning_gpats_latest" }
 ]
