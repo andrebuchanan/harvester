@@ -20,7 +20,8 @@
     "aws-sdk": "1.8.x",
     "async": "0.2.x",
     "redis": "~0.9.1",
-    "hiredis": "~0.1.15"
+    "hiredis": "~0.1.15",
+    "base64-arraybuffer": "~0.1.0"
   },
   "engines": {
     "node": ">=0.10"
