@@ -1,9 +1,9 @@
 [
-  { "enabled": true, "portCode": "SYD", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-33.9461/151.1772/200" },
-  { "enabled": true, "portCode": "MEL", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-37.673333/144.843333/200" },
-  { "enabled": true, "portCode": "BNE", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-27.383333/153.118333/200" },
-  { "enabled": false, "portCode": "HKG", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/22.308889/113.914444/200" },
+  { "enabled": false, "portCode": "SYD", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-33.9461/151.1772/200" },
+  { "enabled": false, "portCode": "MEL", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-37.673333/144.843333/200" },
+  { "enabled": false, "portCode": "BNE", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-27.383333/153.118333/200" },
+  { "enabled": true, "portCode": "HKG", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/22.308889/113.914444/200" },
   { "enabled": false, "portCode": "LHR", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/51.4775/-0.461389/200" },
   { "enabled": false, "portCode": "LGW", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/51.147222/-0.190278/200" },
-  { "enabled": true, "portCode": "AUH", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/24.428056/54.646944/200" }
+  { "enabled": false, "portCode": "AUH", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/24.428056/54.646944/200" }
 ]
