@@ -20,11 +20,11 @@
     <th>status</th>
     <th>description</th>
   </tr>
-  <tr ng-repeat="url in urlsCtrl.urls | filter:urlsCtrl.urlSearch | filter:urlsCtrl.filter" ng-click="urlsCtrl.urlId = url.id;">
+  <tr ng-repeat="url in urlsCtrl.urls | orderBy:'name'" ng-click="urlsCtrl.url = url;">
     <td>{{url.name}}</td>
     <td>
       <span class="dropdown">
-        <a class="status-menu dropdown-toggle">{{url.enabled | status}}</a>
+        <a class="status-menu dropdown-toggle" ng-class="{ 'muted': !url.enabled, 'text-success': url.enabled }">{{url.enabled | status}}</a>
         <ul class="dropdown-menu">
           <li><a ng-click="urlsCtrl.url = url;">{{!url.enabled | status:true}}</a></li>
         </ul>
