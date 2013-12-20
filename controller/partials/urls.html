@@ -24,9 +24,9 @@
     <td>{{url.name}}</td>
     <td>
       <span class="dropdown">
-        <a class="status-menu dropdown-toggle">{{url.status | status}}</a>
+        <a class="status-menu dropdown-toggle">{{url.enabled | status}}</a>
         <ul class="dropdown-menu">
-          <li><a ng-click="urlsCtrl.url = url;">{{!url.status | status:true}}</a></li>
+          <li><a ng-click="urlsCtrl.url = url;">{{!url.enabled | status:true}}</a></li>
         </ul>
       </span>
     </td>

@@ -21,7 +21,7 @@ angular.module('hcontroller.controllers', []).
 
     this.updateUrl = function(url)
     {
-      this.url.status = !this.url.status;
+      this.url.enabled = !this.url.enabled;
       url.$save();
     }
   });
