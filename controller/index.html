@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" ng-app="hcontroller" ng-controller="appCtrl as app">
+  <head>
+    <meta charset="utf-8">
+    <title>Harvester Control</title>
+    <link href="bower_components/bootstrap/docs/assets/css/bootstrap.css" rel="stylesheet" xmedia="screen">
+    <link href="css/app.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+
+    <div class="container">
+      <!-- Site header: ng-included so that it wont show until JS is loaded -->
+      <ng-include src="'partials/site-header.html'"></ng-include>
+      <!-- Main page view -->
+      <div ng-view>
+      </div>
+    </div>
+
+    <!-- Show loader until status.loaded is init'd to true, at which point ng
+      will do it's thing and make the loader go away -->
+    <div class="hero-unit index-loader" ng-show="!status.loaded" ng-init="status.loaded=true;">
+      <h1>Loading</h1>
+      <p>
+        Bit slow, isn't it?
+      </p>
+    </div>
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/services.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/directives.js"></script>
+
+    <!-- No script -->
+    <noscript>
+      <style type="text/css">.index-loader { display: none; }</style>
+      <div class="hero-unit">
+        <h1>Uh Oh!</h1>
+        <p>
+          This site requires javascript to function correctly, if at all. Javascript is pretty good these days. Turn it on! ;-)
+        </p>
+      </div>
+    </noscript>
+  </body>
+</html>

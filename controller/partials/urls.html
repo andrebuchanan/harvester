@@ -1,0 +1,35 @@
+<div class="well well-small hide">
+  <input type="text" placeholder="device search" class="input-medium search-query" ng-model="urlsCtrl.deviceSearch"
+    popover="Start typing to search for a device" popover-trigger="mouseenter">
+
+  <div class="btn-group pull-right">
+    <div class="btn" ng-model="urlsCtrl.filter" btn-radio="">All</div>
+    <div class="btn" ng-model="urlsCtrl.filter" btn-radio="'iphone'">iPhone</div>
+    <div class="btn" ng-model="urlsCtrl.filter" btn-radio="'aphone'">Android Phone</div>
+    <div class="btn" ng-model="urlsCtrl.filter" btn-radio="'ipad'">iPad</div>
+    <div class="btn" ng-model="urlsCtrl.filter" btn-radio="'apad'">Android Tablet</div>
+    <div class="btn" ng-model="urlsCtrl.filter" btn-radio="'ms'">Windows Trainwreck</div>
+  </div>
+</div>
+
+<table class="table table-striped table-hover"
+  ng-init="urlsCtrl.urlId = null;"
+  ng-click="urlsCtrl.updateUrl(urlsCtrl.url);">
+  <tr>
+    <th>name</th>
+    <th>status</th>
+    <th>description</th>
+  </tr>
+  <tr ng-repeat="url in urlsCtrl.urls | filter:urlsCtrl.urlSearch | filter:urlsCtrl.filter" ng-click="urlsCtrl.urlId = url.id;">
+    <td>{{url.name}}</td>
+    <td>
+      <span class="dropdown">
+        <a class="status-menu dropdown-toggle">{{url.status | status}}</a>
+        <ul class="dropdown-menu">
+          <li><a ng-click="urlsCtrl.url = url;">{{!url.status | status:true}}</a></li>
+        </ul>
+      </span>
+    </td>
+    <td>{{url.description}}</td>
+  </tr>
+</table>

@@ -1,0 +1,3 @@
+#!/bin/sh
+export CONTROLLER_SECRET=hashkey
+node control.js $*
