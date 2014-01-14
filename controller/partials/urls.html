@@ -16,13 +16,11 @@
   ng-init="urlsCtrl.url = null;"
   ng-click="urlsCtrl.updateUrl(urlsCtrl.url);">
   <tr>
-    <th>type</th>
     <th>name</th>
     <th>status</th>
     <th>url</th>
   </tr>
   <tr ng-repeat="url in urlsCtrl.urls | orderBy:'name' | filter:urlsCtrl.urlSearch" ng-click="urlsCtrl.url = url;">
-    <td>{{url.type}}</td>
     <td>{{url.name}}</td>
     <td>
       <span class="dropdown">
