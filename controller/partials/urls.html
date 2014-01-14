@@ -19,6 +19,8 @@
     <th>name</th>
     <th>status</th>
     <th>url</th>
+    <th>cron schedule</th>
+    <th>data types</th>
   </tr>
   <tr ng-repeat="url in urlsCtrl.urls | orderBy:'name' | filter:urlsCtrl.urlSearch" ng-click="urlsCtrl.url = url;">
     <td>{{url.name}}</td>
@@ -30,6 +32,8 @@
         </ul>
       </span>
     </td>
-    <td>{{url.url}}</td>
+    <td>{{url.url | shorten}}</td>
+    <td>{{url.cron}}</td>
+    <td><span ng-repeat="dt in url.dataTypes">{{dt}} </span></td>
   </tr>
 </table>

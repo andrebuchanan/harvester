@@ -24,7 +24,8 @@
     "bower": "~1.2.8",
     "grunt-nodemon": "~0.1.2",
     "grunt-bower-task": "~0.3.4",
-    "load-grunt-tasks": "~0.2.1"
+    "load-grunt-tasks": "~0.2.1",
+    "later": "~1.1.6"
   },
   "engines": {
     "node": "0.10.x"

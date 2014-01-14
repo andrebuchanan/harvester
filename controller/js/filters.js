@@ -13,5 +13,13 @@ angular.module('hcontroller.filters', []).
       if (!singular) output += "d";
       return output;
     };
+  }).
+  // Shorten the url
+  filter("shorten", function()
+  {
+    return function(input)
+    {
+      return input.substring(0, input.indexOf("/", 9));
+    };
   });
 })();
