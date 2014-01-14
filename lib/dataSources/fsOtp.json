@@ -1,4 +1,0 @@
-[
-  { "enabled": true, "fleet": "VA", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/VA/dep/{y}/{m}/{d}/{h}" },
-  { "enabled": true, "fleet": "QF", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/QF/dep/{y}/{m}/{d}/{h}" }
-]
