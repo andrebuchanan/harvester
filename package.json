@@ -25,7 +25,8 @@
     "grunt-nodemon": "~0.1.2",
     "grunt-bower-task": "~0.3.4",
     "load-grunt-tasks": "~0.2.1",
-    "json-filter": "0.0.2"
+    "json-filter": "0.0.2",
+    "later": "~1.1.6"
   },
   "engines": {
     "node": "0.10.x"
