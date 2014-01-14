@@ -31,4 +31,5 @@
   { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fsotp"], "name": "OTP QF", "id": "otp-QF", "enabled": false, "fleet": "QF", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/QF/dep/{y}/{m}/{d}/{h}" },
   { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fsotp"], "name": "OTP JQ", "id": "otp-JQ", "enabled": false, "fleet": "JQ", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/JQ/dep/{y}/{m}/{d}/{h}" },
   { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fraircraft"], "name": "Flight Equip", "id": "fraircraft", "url": "http://www.flightradar24.com/zones/full_all.json", "enabled": false }
+
 ]
