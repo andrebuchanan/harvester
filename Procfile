@@ -1,3 +1,3 @@
 web: node control.js -p $PORT
-web: node handler.js -p $PORT
-web: node harvester.js
+handler: node handler.js
+harvester: node harvester.js
