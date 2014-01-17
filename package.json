@@ -5,10 +5,7 @@
   "bin": {
     "harvester": "./bin/harvester"
   },
-  "scripts": {
-    "start": "node harvester.js"
-  },
-  "main": "./lib/harvester",
+  "repository": "https://githib.com/andrebuchanan/harvester",
   "dependencies": {
     "request": "2.25.x",
     "express": "3.3.x",
