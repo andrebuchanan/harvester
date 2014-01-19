@@ -1,1 +1,4 @@
-(node control.js -p $PORT)&;(node handler.js)&;(node harvester.js)&;
+#!/bin/sh
+(node control.js -p $PORT)&
+(node handler.js)&
+(node harvester.js)&
