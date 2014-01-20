@@ -1,0 +1,31 @@
+{
+  "name": "controller",
+  "version": "0.1.0",
+  "authors": [
+    "abuchanan <andre.r.buchanan@gmail.com>"
+  ],
+  "description": "harvester url control",
+  "main": "index.html",
+  "keywords": [
+    "harvester",
+    "control",
+    "url"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.2.4",
+    "angular-bootstrap": "~0.6.0",
+    "bootstrap": "2.3.2",
+    "angular-resource": "~1.2.4",
+    "angular-mocks": "~1.2.4",
+    "angular-route": "~1.2.4"
+  }
+}
