@@ -1,3 +1,1 @@
-web: node control.js -p $PORT
-worker: node harvester.js
-worker: node handler.js
+web: node handler.js -p $PORT
