@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
 
+  // Load all grunt tasks.
+  require("load-grunt-tasks")(grunt);
+
   // Project configuration.
   grunt.initConfig({
     pkg: grunt.file.readJSON("package.json"),
@@ -12,11 +15,20 @@ module.exports = function(grunt) {
           watchedFolders: ["./lib"]
         }
       }
+    },
+    // Need to install bower components.
+    bower: {
+      install: {
+        options: {
+          install: true,
+          targetDir: "./controller/bower_components",
+          cleanBowerDir: true
+        }
+      }
     }
   });
 
-  grunt.loadNpmTasks("grunt-nodemon");
-
   grunt.registerTask("default", ["nodemon:control"]);
+  grunt.registerTask("build", ["bower"]);
   grunt.registerTask("serve", ["nodemon:control"]);
 };
