@@ -29,5 +29,8 @@
     "node": "0.10.x"
   },
   "devDependencies": {
+  },
+  "scripts": {
+    "prepublish": "grunt build"
   }
 }
