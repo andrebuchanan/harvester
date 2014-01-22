@@ -31,6 +31,6 @@
   "devDependencies": {
   },
   "scripts": {
-    "prepublish": "grunt build"
+    "install": "grunt build"
   }
 }
