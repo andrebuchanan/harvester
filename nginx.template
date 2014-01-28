@@ -13,4 +13,8 @@ server {
     proxy_set_header X-Request-Start \$msec;
   }
 }
+<<<<<<< HEAD
 # This file to be placed in handler's dokku directory, eg, /home/dokku/handler/nginx.template
+=======
+# This file to be placed in handler's dokku directory, eg, /home/dokku/handler/nginx.template
+>>>>>>> deployment for handler
