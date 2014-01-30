@@ -15,6 +15,8 @@
   { "name": "LHR-DEP", "id": "LHR-DEP", "disabled": false, "transition": "DEP", "portCode": "LHR", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/LHR/departures" },
   { "name": "HKG-ARR", "id": "HKG-ARR", "disabled": true, "transition": "ARR", "portCode": "HKG", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/arrivals" },
   { "name": "HKG-DEP", "id": "HKG-DEP", "disabled": true, "transition": "DEP", "portCode": "HKG", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/departures" },
+  { "name": "CNS-ARR", "id": "CNS-ARR", "disabled": true, "transition": "ARR", "portCode": "CNS", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/CNS/arrivals" },
+  { "name": "CNS-DEP", "id": "CNS-DEP", "disabled": true, "transition": "DEP", "portCode": "CNS", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/CNS/departures" },
   { "name": "JNB-ARR", "id": "JNB-ARR", "disabled": false, "transition": "ARR", "portCode": "JNB", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/JNB/arrivals" },
   { "name": "JNB-DEP", "id": "JNB-DEP", "disabled": false, "transition": "DEP", "portCode": "JNB", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/JNB/departures" }
 ]

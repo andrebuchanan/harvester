@@ -2,6 +2,7 @@
   { "id": "track-SYD", "name": "track-SYD", "disabled": false, "portCode": "SYD", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-33.9461/151.1772/200" },
   { "id": "track-MEL", "name": "track-MEL", "disabled": false, "portCode": "MEL", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-37.673333/144.843333/200" },
   { "id": "track-BNE", "name": "track-BNE", "disabled": false, "portCode": "BNE", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-27.383333/153.118333/200" },
+  { "id": "track-CNS", "name": "track-CNS", "disabled": false, "portCode": "CNS", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/-16.886667/145.755/200" },
   { "id": "track-HKG", "name": "track-HKG", "disabled": true, "portCode": "HKG", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/22.308889/113.914444/200" },
   { "id": "track-LHR", "name": "track-LHR", "disabled": false, "portCode": "LHR", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/51.4775/-0.461389/200" },
   { "id": "track-LGW", "name": "track-LGW", "disabled": false, "portCode": "LGW", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/flightsNear/51.147222/-0.190278/200" },
