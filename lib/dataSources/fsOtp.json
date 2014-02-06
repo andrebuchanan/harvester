@@ -1,4 +1,5 @@
 [
-  { "enabled": true, "fleet": "VA", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/VA/dep/{y}/{m}/{d}/{h}" },
-  { "enabled": true, "fleet": "QF", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/QF/dep/{y}/{m}/{d}/{h}" }
+  { "name": "OTP VA", "id": "OTP-VA", "type": "fsotp", "enabled": false, "fleet": "VA", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/VA/dep/{y}/{m}/{d}/{h}" },
+  { "name": "OTP QF", "id": "OTP-QF", "type": "fsotp", "enabled": false, "fleet": "QF", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/QF/dep/{y}/{m}/{d}/{h}" },
+  { "name": "OTP JQ", "id": "OTP-JQ", "type": "fsotp", "enabled": false, "fleet": "JQ", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/JQ/dep/{y}/{m}/{d}/{h}" }
 ]
