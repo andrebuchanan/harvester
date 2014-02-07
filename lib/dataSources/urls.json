@@ -29,5 +29,6 @@
   { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fsfids"], "name": "FIDS JNB-DEP", "id": "JNB-DEP", "enabled": false, "transition": "DEP", "portCode": "JNB", "url": "https://api.flightstats.com/flex/fids/rest/v1/json/JNB/departures" },
   { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fsotp"], "name": "OTP VA", "id": "otp-VA", "enabled": false, "fleet": "VA", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/VA/dep/{y}/{m}/{d}/{h}" },
   { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fsotp"], "name": "OTP QF", "id": "otp-QF", "enabled": false, "fleet": "QF", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/QF/dep/{y}/{m}/{d}/{h}" },
+  { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fsotp"], "name": "OTP JQ", "id": "otp-JQ", "enabled": false, "fleet": "JQ", "url": "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/JQ/dep/{y}/{m}/{d}/{h}" },
   { "json": true, "cron": "* */2 * * * *", "dataTypes": ["fraircraft"], "name": "Flight Equip", "id": "fraircraft", "url": "http://www.flightradar24.com/zones/full_all.json", "enabled": false }
 ]
