@@ -1,3 +1,12 @@
+var env;
+try {
+  env = require("./env.json");
+}
+catch (e)
+{
+  console.log(e);
+}
+env = env || {};
 module.exports = function(grunt) {
 
   // Load all grunt tasks.
@@ -11,20 +20,23 @@ module.exports = function(grunt) {
         options: {
           file: "control.js",
           args: ["3001"],
-          watchedFolders: ["./lib"]
+          watchedFolders: ["./lib"],
+          env: env
         }
       },
       harvester: {
         options: {
           file: "harvester.js",
-          watchedFolders: ["./lib"]
+          watchedFolders: ["./lib"],
+          env: env
         }
       },
       handler: {
         options: {
           file: "handler.js",
           args: ["3000"],
-          watchedFolders: ["./lib"]
+          watchedFolders: ["./lib"],
+          env: env
         }
       }
     },
