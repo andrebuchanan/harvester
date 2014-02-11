@@ -2,7 +2,7 @@
 {
 "use strict";
 
-angular.module('hcontroller.controllers', []).
+angular.module('hcontroller.controllers', ["firebase"]).
   //
   // App controller. Handle basic functions.
   controller("appCtrl", function()
@@ -14,15 +14,16 @@ angular.module('hcontroller.controllers', []).
   })
   //
   // Url controller.
-  .controller("urlCtrl", function($scope, Url)
+  .controller("urlCtrl", function($scope, $firebase)
   {
     var that = this;
-    this.urls = Url.query();
+    var ref = new Firebase("https://cti-harvester-urls.firebaseio.com/");
+    this.urls = $firebase(ref);
 
     this.updateUrl = function(url)
     {
       this.url.enabled = !this.url.enabled;
-      url.$save();
-    }
+      this.urls.$save();
+    };
   });
 })();
