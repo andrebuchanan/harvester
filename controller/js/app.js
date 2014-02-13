@@ -8,10 +8,9 @@ var app = angular.module("hcontroller", ["ngRoute", "ui.bootstrap", "hcontroller
     {
       $routeProvider.when("/",
         { templateUrl: "partials/urls.html", controller: "urlCtrl as urlsCtrl" });
-      // $routeProvider.when("/events/edit/:eventId",
-      //                                     { templateUrl: "partials/event.html",   controller: "eventsCtrl",
-      //   resolve: { getAuth: authCheck, getAuthz: authzCheck } });
-      $routeProvider.otherwise({ redirectTo: "/" });
+      $routeProvider.when("/url/:urlId",
+        { templateUrl: "partials/url.html", controller: "urlCtrl as urlsCtrl" });
+     $routeProvider.otherwise({ redirectTo: "/" });
     }]);
 
 app.run(function($rootScope, $log)
