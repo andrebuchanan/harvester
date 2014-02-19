@@ -24,13 +24,13 @@
     "bower": "~1.2.8",
     "grunt-nodemon": "~0.1.2",
     "grunt-bower-task": "~0.3.4",
-    "load-grunt-tasks": "~0.2.1"
+    "load-grunt-tasks": "~0.2.1",
+    "json-filter": "0.0.2"
   },
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
     "prepublish": "grunt build"
   }
