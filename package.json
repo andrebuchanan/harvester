@@ -31,7 +31,10 @@
   "engines": {
     "node": "0.10.x"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "grunt-contrib-stylus": "~0.13.0",
+    "grunt-contrib-watch": "~0.5.3"
+  },
   "scripts": {
     "prepublish": "grunt build"
   }

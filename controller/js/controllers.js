@@ -44,7 +44,7 @@ angular.module('hcontroller.controllers', ["firebase"]).
     // Save a url.
     this.saveUrl = function(url)
     {
-      console.log(this.url, url);
+      this.urls.$save();
     };
 
     //
@@ -61,6 +61,15 @@ angular.module('hcontroller.controllers', ["firebase"]).
         },
         controller: "modalInstanceCtrl as modal"
       });
+    };
+
+    this.addNewQs = function(key, value)
+    {
+      var newQs = {};
+      newQs[key] = value;
+      if (!this.url.qs) this.url.qs = {};
+      this.url.qs[key] = value;
+      key = ""; value = "";
     };
 
   })

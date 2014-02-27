@@ -1,4 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Ubuntu:400,700");
-body{font-family:'Ubuntu',sans-serif}
+body{font-family:'Ubuntu',sans-serif;padding-top:70px}
 .search-query + .btn{margin-left:1em}
+table.noborder td,table.noborder th{border-top-width:0 !important}
 .status-menu{cursor:pointer}
