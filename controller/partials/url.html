@@ -1,0 +1,109 @@
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-url-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="navbar-brand">
+        {{urlsCtrl.url.name}}
+        <span class="label" ng-class="{'label-success': urlCtrl.url.enabled, 'label-default': !urlCtrl.url.enabled}">{{urlCtrl.url.enabled | status}}</span>
+      </div>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-url-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#"><span class="glyphicon glyphicon-chevron-left"></span> Back</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">URL Control <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#" ng-click="$event.preventDefault(); urlCtrl.url.enabled = true">Enable</a></li>
+            <li><a href="#" ng-click="$event.preventDefault(); urlCtrl.url.enabled = false">Disable</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Delete</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p class="navbar-text navbar-right">{{urlsCtrl.url.url}}</p>
+    </div>
+  </div>
+</nav>
+
+<form action="" class="form-horizontal">
+
+  <div class="row">
+    <div class="col-md-6">
+      <legend>Details</legend>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Name</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="URL name" ng-model="urlsCtrl.url.name">
+          <span class="help-block">This is a human readable name for the URL</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">ID</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="URL unique ID" ng-model="urlsCtrl.url.id">
+          <span class="help-block">Unique ID for the URL. Don't change this unless you know what you're doing.</span>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">URL</label>
+        <div class="col-sm-10">
+          <input type="url" class="form-control" placeholder="https://provider/data/variable" ng-model="urlsCtrl.url.url" class="input-xxlarge">
+          <span class="help-block">URL from which data is obtained.</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <legend>URL Schedule</legend>
+
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Run Schedule</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" placeholder="* */5 * * * *" ng-model="urlsCtrl.url.cron">
+          <span class="help-block">Specify valid crontab schedule.</span>
+        </div>
+      </div>
+
+      <legend>URL Parameters</legend>
+      <div class="form-group">
+        <label class="col-sm-2 control-label">Query String</label>
+        <div class="col-sm-10">
+          <div class="row">
+            <div class="col-md-2">
+              <button type="button" class="btn btn-primary" ng-click="urlsCtrl.addNewQs(newKey, newValue);">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+                Add
+              </button>
+            </div>
+            <div class="col-md-4">
+              <input type="text" class="form-control" ng-model="newKey" placeholder="key">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control" ng-model="newValue" placeholder="value">
+            </div>
+          </div>
+          <table class="table table-condensed noborder">
+            <tr ng-show="urlsCtrl.url.qs.length">
+              <th>key</th>
+              <th>value</th>
+            </tr>
+            <tr ng-repeat="(qsKey, qsValue) in urlsCtrl.url.qs">
+              <td><input type="text" class="form-control input-sm" ng-model="qsKey"></td>
+              <td><input type="text" class="form-control input-sm" ng-model="qsValue"></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</form>

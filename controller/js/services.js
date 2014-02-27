@@ -2,8 +2,8 @@
 {
 "use strict";
 
-angular.module('hcontroller.services', ["ngResource"]).
-  factory("Url", function($resource)
+angular.module('hcontroller.services', ["firebase"]).
+  factory("Url", function($firebase)
   {
     var Url = $resource("/url/:id", {}, {});
     return Url;

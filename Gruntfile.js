@@ -49,11 +49,26 @@ module.exports = function(grunt) {
           cleanBowerDir: true
         }
       }
+    },
+    // Build css from stylus
+    stylus: {
+      compile: {
+        options: {
+          compress: true
+        },
+        files: { "controller/css/app.css": "controller/css/app.styl"}
+      }
+    },
+    watch: {
+      stylus: {
+        files: "controller/css/*.styl",
+        tasks: ["stylus"]
+      }
     }
   });
 
   grunt.registerTask("default", ["nodemon:control"]);
-  grunt.registerTask("build", ["bower"]);
+  grunt.registerTask("build", ["bower, stylus"]);
   grunt.registerTask("controller", ["bower", "nodemon:controller"]);
   grunt.registerTask("harvester", ["nodemon:harvester"]);
   grunt.registerTask("handler", ["nodemon:handler"]);
