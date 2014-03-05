@@ -1,6 +1,8 @@
-<nav class="navbar navbar-default" role="navigation">
+<ng-include src="'partials/site-header.html'"></ng-include>
+
+<nav class="navbar navbar-default" role="navigation"> <!-- navbar parent -->
   <div class="container-fluid">
-    <div class="navbar-header">
+    <div class="navbar-header"> <!-- collapsed controls, brand header -->
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-url-collapse">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -9,101 +11,218 @@
       </button>
       <div class="navbar-brand">
         {{urlsCtrl.url.name}}
-        <span class="label" ng-class="{'label-success': urlCtrl.url.enabled, 'label-default': !urlCtrl.url.enabled}">{{urlCtrl.url.enabled | status}}</span>
+        <span class="label" ng-class="{'label-success': urlsCtrl.url.enabled, 'label-default': !urlsCtrl.url.enabled}">{{urlsCtrl.url.enabled | status}}</span>
       </div>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbar-url-collapse">
+    </div> <!-- collapsed controls, brand header -->
+    <div class="collapse navbar-collapse" id="navbar-url-collapse"> <!-- actual controls -->
       <ul class="nav navbar-nav">
         <li><a href="#"><span class="glyphicon glyphicon-chevron-left"></span> Back</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">URL Control <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#" ng-click="$event.preventDefault(); urlCtrl.url.enabled = true">Enable</a></li>
-            <li><a href="#" ng-click="$event.preventDefault(); urlCtrl.url.enabled = false">Disable</a></li>
+            <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.url.enabled = true">Enable</a></li>
+            <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.url.enabled = false">Disable</a></li>
             <li class="divider"></li>
-            <li><a href="#">Delete</a></li>
+            <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.deleteUrl(urlsCtrl.url);">Delete</a></li>
           </ul>
+        </li>
+        <li>
+          <button class="btn btn-primary navbar-btn" ng-show="urlsCtrl.edit.unsaved" ng-click="urlsCtrl.saveUrl(urlsCtrl.url);">
+            <span class="glyphicon glyphicon-save"></span> Save
+          </button>
+          <button class="btn btn-danger navbar-btn" ng-show="urlsCtrl.edit.unsaved" ng-click="urlsCtrl.loadUrlData(urlsCtrl.url.id);">
+            <span class="glyphicon glyphicon-remove"></span> Cancel Changes
+          </button>
+          <div class="btn btn-info navbar-btn" ng-show="urlsCtrl.edit.saving">
+            <span class="glyphicon glyphicon-floppy-disk"></span> Saving...
+          </div>
         </li>
       </ul>
       <p class="navbar-text navbar-right">{{urlsCtrl.url.url}}</p>
-    </div>
+    </div> <!-- actual controls -->
   </div>
-</nav>
+</nav> <!-- navbar parent -->
 
-<form action="" class="form-horizontal">
+<div collapse="!urlsCtrl.urlSaveError.alert">
+  <alert class="alert-danger" close="urlsCtrl.urlSaveError.alert = false;">
+    {{urlsCtrl.urlSaveError.alert}}
+  </alert>
+</div>
 
-  <div class="row">
-    <div class="col-md-6">
+<form action="" class="form-horizontal" ng-keypress="urlsCtrl.unsaved();">
+  <div class="row"> <!-- row -->
+    <div class="col-md-12"> <!-- inputs -->
+      <legend>URL</legend>
+      <input type="url" class="form-control" placeholder="https://provider/data/variable" ng-model="urlsCtrl.url.url">
+      <span class="help-block">URL from which data is obtained.</span>
+    </div> <!-- inputs -->
+  </div> <!-- row -->
+
+  <div class="row"> <!-- row -->
+    <div class="col-md-12">
+      <legend>URL Run Schedule</legend>
+      <div class="row">
+        <div class="col-md-6">
+          <p>URLs are used to make HTTP requests on a crontab schedule.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group"> <!-- inputs -->
+            <label class="col-sm-2 control-label">Cron</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="* */5 * * * *" ng-model="urlsCtrl.url.cron">
+              <span class="help-block">Specify a valid crontab format.</span>
+            </div>
+          </div> <!-- inputs -->
+        </div>
+      </div>
+    </div><!-- row --><!-- row -->
+  </div> <!-- row -->
+
+  <div class="row"> <!-- row -->
+    <div class="col-md-12">
+      <legend>URL Options</legend>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group"> <!-- inputs -->
+            <label class="col-sm-2 control-label">HTTP Auth</label>
+            <div class="col-sm-5">
+              <input type="text" class="form-control" placeholder="Username" ng-model="urlsCtrl.url.auth.username">
+              <span class="help-block">Basic HTTP auth username</span>
+            </div>
+            <div class="col-sm-5">
+              <input type="password" class="form-control" placeholder="Password" ng-model="urlsCtrl.url.auth.password">
+            </div>
+          </div> <!-- inputs -->
+        </div>
+        <div class="col-md-6">
+          <div class="form-group"> <!-- inputs -->
+            <label class="col-sm-2 control-label">URL Encoding</label>
+            <div class="col-sm-10">
+              <div class="radio">
+                <label>
+                  <input type="radio" ng-model="urlsCtrl.url.encoding" ng-click="urlsCtrl.removeField('encoding'); urlsCtrl.unsaved();"
+                    ng-checked="urlsCtrl.url.encoding === undefined">
+                  Default - Use this if the URL will retrieve text (eg JSON).
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" ng-model="urlsCtrl.url.encoding" value="null" ng-checked="urlsCtrl.url.encoding === null" ng-click="urlsCtrl.unsaved();">
+                  Null - Use this if the URL will retrieve images.
+                </label>
+              </div>
+            </div>
+          </div> <!-- inputs -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group"> <!-- inputs -->
+            <label class="col-sm-2 control-label">JSON</label>
+            <div class="col-sm-10">
+              <div class="radio">
+                <label>
+                  <input type="radio" ng-model="urlsCtrl.url.json" value="true" ng-checked="urlsCtrl.url.json === true"
+                    ng-click="urlsCtrl.unsaved();">
+                  Yes - Use this if the URL will retrieve JSON.
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" ng-model="urlsCtrl.url.json" ng-click="urlsCtrl.removeField('json'); urlsCtrl.unsaved();"
+                    ng-checked="urlsCtrl.url.json === undefined">
+                  Default - Use this if the URL will retrieve anything else.
+                </label>
+              </div>
+            </div>
+          </div> <!-- inputs -->
+        </div>
+      </div>
+    </div><!-- row -->
+  </div> <!-- row -->
+
+  <div class="row"> <!-- row -->
+    <div class="col-md-4"> <!-- column -->
       <legend>Details</legend>
-
-      <div class="form-group">
+      <div class="form-group"> <!-- inputs -->
         <label class="col-sm-2 control-label">Name</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" placeholder="URL name" ng-model="urlsCtrl.url.name">
-          <span class="help-block">This is a human readable name for the URL</span>
+          <span class="help-block">This is a human readable name for the URL.</span>
         </div>
-      </div>
-
-      <div class="form-group">
+      </div> <!-- inputs -->
+      <div class="form-group"> <!-- inputs -->
         <label class="col-sm-2 control-label">ID</label>
         <div class="col-sm-10">
           <input type="text" class="form-control" placeholder="URL unique ID" ng-model="urlsCtrl.url.id">
           <span class="help-block">Unique ID for the URL. Don't change this unless you know what you're doing.</span>
         </div>
-      </div>
+      </div> <!-- inputs -->
+    </div> <!-- column -->
 
-      <div class="form-group">
-        <label class="col-sm-2 control-label">URL</label>
-        <div class="col-sm-10">
-          <input type="url" class="form-control" placeholder="https://provider/data/variable" ng-model="urlsCtrl.url.url" class="input-xxlarge">
-          <span class="help-block">URL from which data is obtained.</span>
+    <div class="col-md-4"> <!-- column -->
+      <legend>Data Types</legend>
+      <div class="form-group"> <!-- inputs -->
+        <div class="col-sm-12">
+          <div class="row"> <!-- add key row -->
+            <div class="col-md-2">
+              <button type="button" class="btn btn-primary btn-block" title="Add new data type"
+                ng-click="urlsCtrl.addNewDt(newDataType); newDataType = ''; urlsCtrl.unsaved();">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+              </button>
+            </div>
+            <div class="col-md-10">
+              <input type="text" class="form-control" ng-model="newDataType" placeholder="Data type name">
+            </div>
+          </div>  <!-- add key row -->
+          <div class="row key-row" ng-repeat="dataType in urlsCtrl.url.dataTypes"> <!-- key row -->
+            <div class="col-md-2">
+              <button class="btn btn-danger btn-sm btn-block" title="Remove data type" ng-click="urlsCtrl.removeDt(dataType); urlsCtrl.unsaved();">
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
+            </div>
+            <div class="col-md-10">
+              <input type="text" class="form-control input-sm" ng-model="dataType">
+            </div>
+          </div> <!-- key row -->
         </div>
-      </div>
-    </div>
+      </div> <!-- inputs -->
+    </div> <!-- column -->
 
-    <div class="col-md-6">
-      <legend>URL Schedule</legend>
-
-      <div class="form-group">
-        <label class="col-sm-2 control-label">Run Schedule</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" placeholder="* */5 * * * *" ng-model="urlsCtrl.url.cron">
-          <span class="help-block">Specify valid crontab schedule.</span>
-        </div>
-      </div>
-
+    <div class="col-md-4"> <!-- column -->
       <legend>URL Parameters</legend>
-      <div class="form-group">
+      <div class="form-group"> <!-- inputs -->
         <label class="col-sm-2 control-label">Query String</label>
         <div class="col-sm-10">
-          <div class="row">
+          <div class="row"> <!-- add key row -->
             <div class="col-md-2">
-              <button type="button" class="btn btn-primary" ng-click="urlsCtrl.addNewQs(newKey, newValue);">
+              <button type="button" class="btn btn-primary btn-block" title="Add New Query String"
+                ng-click="urlsCtrl.addNewQs(newKey, newValue); newKey=''; newValue=''; urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-plus-sign"></span>
-                Add
               </button>
             </div>
             <div class="col-md-4">
-              <input type="text" class="form-control" ng-model="newKey" placeholder="key">
+              <input type="text" class="form-control" ng-model="newKey" placeholder="Key">
             </div>
             <div class="col-md-6">
-              <input type="text" class="form-control" ng-model="newValue" placeholder="value">
+              <input type="text" class="form-control" ng-model="newValue" placeholder="Value">
             </div>
-          </div>
-          <table class="table table-condensed noborder">
-            <tr ng-show="urlsCtrl.url.qs.length">
-              <th>key</th>
-              <th>value</th>
-            </tr>
-            <tr ng-repeat="(qsKey, qsValue) in urlsCtrl.url.qs">
-              <td><input type="text" class="form-control input-sm" ng-model="qsKey"></td>
-              <td><input type="text" class="form-control input-sm" ng-model="qsValue"></td>
-            </tr>
-          </table>
+          </div>  <!-- add key row -->
+          <div class="row key-row" ng-repeat="(qsKey, qsValue) in urlsCtrl.url.qs"> <!-- key row -->
+            <div class="col-md-2">
+              <button class="btn btn-danger btn-sm btn-block" title="Remove parameter" ng-click="urlsCtrl.removeQs(qsKey); urlsCtrl.unsaved();">
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
+            </div>
+            <div class="col-md-4">
+              <input ng-disabled="true" type="text" class="form-control input-sm" ng-model="qsKey">
+            </div>
+            <div class="col-md-6">
+              <input type="text" class="form-control input-sm" ng-model="qsValue" ng-change="urlsCtrl.updateQs(qsKey, qsValue);">
+            </div>
+          </div> <!-- key row -->
         </div>
-      </div>
-    </div>
-
-  </div>
+      </div> <!-- inputs -->
+    </div> <!-- column -->
+  </div> <!-- row -->
 </form>
