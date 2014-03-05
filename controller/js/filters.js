@@ -19,7 +19,9 @@ angular.module('hcontroller.filters', []).
   {
     return function(input)
     {
-      return input.substring(0, input.indexOf("/", 9)) + "...";
+      if (!input) return;
+      var idx = input.substring(0, input.indexOf("/", 9)) + "...";
+      return idx;
     };
   });
 })();

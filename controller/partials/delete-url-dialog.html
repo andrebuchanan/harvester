@@ -1,0 +1,18 @@
+<div class="modal-header">
+  <h3 class="text-danger">Delete URL</h3>
+</div>
+<div class="modal-body">
+  <p>Please confirm deletion of URL by typing URL name below.</p>
+  <p class="text-danger">This action can only be undone by modifying the firebase data directly.</p>
+  <div class="form-group">
+    <label> Delete "{{deleteUrlCtrl.url.name}}"</label>
+    <input type="text" class="form-control" ng-model="deleteUrlCtrl.urlName" placeholder="URL name exactly as it appears above, not including double-quotes">
+  </div>
+</div>
+<div class="modal-footer">
+  <button class="btn btn-danger" ng-click="deleteUrlCtrl.deleteUrl();" ng-disabled="deleteUrlCtrl.urlName !== deleteUrlCtrl.url.name">
+    <span class="glyphicon glyphicon-remove"></span>
+    Delete
+  </button>
+  <button class="btn btn-primary" ng-click="deleteUrlCtrl.cancel();">Cancel</button>
+</div>

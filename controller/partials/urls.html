@@ -1,9 +1,34 @@
-<div class="well well-sm row">
-  <div class="col-xs-3">
-    <input type="text" placeholder="url search" class="form-control" ng-model="urlsCtrl.urlSearch"
-      popover="Start typing to search for a url" popover-trigger="mouseenter" popover-placement="bottom">
+<ng-include src="'partials/site-header.html'"></ng-include>
+
+<nav class="navbar navbar-default" role="navigation"> <!-- navbar parent -->
+  <div class="container-fluid">
+    <div class="navbar-header"> <!-- collapsed controls, brand header -->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-urls-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div> <!-- collapsed controls, brand header -->
+    <div class="collapse navbar-collapse" id="navbar-urls-collapse"> <!-- actual controls -->
+      <form action="" class="navbar-form navbar-left"> <!-- search form -->
+        <input type="search" class="form-control" placeholder="URL search" ng-model="urlsCtrl.urlSearch.$"
+          popover="Start typing to search for a url" popover-trigger="mouseenter" popover-placement="bottom">
+      </form> <!-- search form -->
+      <form action="" class="navbar-form navbar-left"> <!-- search form -->
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="URL unique ID" ng-model="newUrlId" ng-required="true" ng-minlength="3">
+        </div>
+        <button class="btn btn-primary" ng-click="urlsCtrl.addNewUrl(newUrlId); newUrlId = '';" ng-disabled="!newUrlId">
+          <span class="glyphicon glyphicon-plus"></span>
+          Add New URL
+        </button>
+      </form> <!-- search form -->
+    </div> <!-- actual controls -->
   </div>
-</div>
+</nav> <!-- navbar parent -->
+
+
 
 <table class="table table-striped table-hover"
   ng-init="urlsCtrl.url = null;"
@@ -15,11 +40,11 @@
     <th>cron schedule</th>
     <th>data types</th>
   </tr>
-  <tr ng-repeat="url in urlsCtrl.urls | orderBy:'name' | filter:urlsCtrl.urlSearch" ng-click="urlsCtrl.url = url;">
+  <tr ng-repeat="url in urlsCtrl.urls | orderByPriority | filter:urlsCtrl.urlSearch | orderBy:'name'" ng-click="urlsCtrl.url = url;">
     <td>{{url.name}}</td>
     <td>
-      <button type="button" class="btn btn-mini" ng-class="{'btn-success': url.enabled}"
-        ng-model="url.enabled" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-click="$event.stopPropagation(); urlsCtrl.saveUrl();">
+      <button type="button" class="btn btn-xs" ng-class="{'btn-success': url.enabled}"
+        ng-model="url.enabled" btn-checkbox btn-checkbox-true="true" btn-checkbox-false="false" ng-click="$event.stopPropagation(); urlsCtrl.toggleState(url);">
         {{url.enabled | status}}
       </button>
     </td>

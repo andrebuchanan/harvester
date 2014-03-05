@@ -9,8 +9,6 @@
   <body>
 
     <div class="container-fluid">
-      <!-- Site header: ng-included so that it wont show until JS is loaded -->
-      <ng-include src="'partials/site-header.html'"></ng-include>
       <!-- Main page view -->
       <div ng-view>
       </div>
@@ -29,8 +27,9 @@
     <script src="bower_components/angular-route/angular-route.js"></script>
     <script src="bower_components/angular-resource/angular-resource.js"></script>
     <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-    <script src="https://cdn.firebase.com/v0/firebase.js"></script>
-    <script src="https://cdn.firebase.com/libs/angularfire/0.6.0/angularfire.min.js"></script>
+    <script src="https://cdn.firebase.com/js/client/1.0.5/firebase.js"></script>
+    <script src="https://cdn.firebase.com/libs/angularfire/0.7.0/angularfire.js"></script>
+    <script src="https://cdn.firebase.com/js/simple-login/1.2.5/firebase-simple-login.js"></script>
     <script src="js/app.js"></script>
     <script src="js/services.js"></script>
     <script src="js/controllers.js"></script>
