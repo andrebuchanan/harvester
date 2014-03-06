@@ -27,7 +27,10 @@
     "load-grunt-tasks": "~0.2.1",
     "json-filter": "0.0.2",
     "later": "~1.1.6",
-    "firebase": "~1.0.5"
+    "firebase": "~1.0.5",
+    "JSONStream": "~0.8.0",
+    "event-stream": "~3.1.0",
+    "prettycron": "~0.9.1"
   },
   "engines": {
     "node": "0.10.x"
