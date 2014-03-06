@@ -20,8 +20,8 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">URL Control <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.url.enabled = true">Enable</a></li>
-            <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.url.enabled = false">Disable</a></li>
+            <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.setState(urlsCtrl.url, true);">Enable</a></li>
+            <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.setState(urlsCtrl.url, false);">Disable</a></li>
             <li class="divider"></li>
             <li><a href="#" ng-click="$event.preventDefault(); urlsCtrl.deleteUrl(urlsCtrl.url);">Delete</a></li>
           </ul>

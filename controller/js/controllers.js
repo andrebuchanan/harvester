@@ -85,6 +85,13 @@ angular.module('hcontroller.controllers', ["firebase"]).
       this.urls.$save();
     };
 
+    // Flip the enabled flag on a url.
+    this.setState = function(url, state)
+    {
+      url.enabled = state;
+      this.urls.$save();
+    };
+
     // Save a url.
     this.saveUrl = function(url)
     {
