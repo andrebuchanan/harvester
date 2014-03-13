@@ -123,6 +123,16 @@ angular.module('hcontroller.controllers', ["firebase"]).
       this.url.qs[qsKey] = qsValue;
     };
 
+    this.removeVar = function(vKey)
+    {
+      delete this.url.vars[vKey];
+    };
+
+    this.updateVar = function(vKey, vValue)
+    {
+      this.url.vars[vKey] = vValue;
+    };
+
     this.addNewDt = function(newDt)
     {
       this.url.dataTypes.push(newDt);

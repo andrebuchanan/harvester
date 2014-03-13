@@ -38,7 +38,6 @@
           </div>
         </li>
       </ul>
-      <p class="navbar-text navbar-right">{{urlsCtrl.url.url}}</p>
     </div> <!-- actual controls -->
   </div>
 </nav> <!-- navbar parent -->
@@ -51,7 +50,7 @@
 
 <form action="" class="form-horizontal" ng-keypress="urlsCtrl.unsaved();">
   <div class="row"> <!-- row -->
-    <div class="col-md-12"> <!-- inputs -->
+    <div class="col-sm-12"> <!-- inputs -->
       <legend>URL</legend>
       <input type="url" class="form-control" placeholder="https://provider/data/variable" ng-model="urlsCtrl.url.url">
       <span class="help-block">URL from which data is obtained.</span>
@@ -59,13 +58,13 @@
   </div> <!-- row -->
 
   <div class="row"> <!-- row -->
-    <div class="col-md-12">
+    <div class="col-sm-12">
       <legend>URL Run Schedule</legend>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <p>URLs are used to make HTTP requests on a crontab schedule.</p>
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <div class="form-group"> <!-- inputs -->
             <label class="col-sm-2 control-label">Cron</label>
             <div class="col-sm-10">
@@ -79,10 +78,10 @@
   </div> <!-- row -->
 
   <div class="row"> <!-- row -->
-    <div class="col-md-12">
+    <div class="col-sm-12">
       <legend>URL Options</legend>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <div class="form-group"> <!-- inputs -->
             <label class="col-sm-2 control-label">HTTP Auth</label>
             <div class="col-sm-5">
@@ -94,7 +93,7 @@
             </div>
           </div> <!-- inputs -->
         </div>
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <div class="form-group"> <!-- inputs -->
             <label class="col-sm-2 control-label">URL Encoding</label>
             <div class="col-sm-10">
@@ -116,7 +115,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-sm-6">
           <div class="form-group"> <!-- inputs -->
             <label class="col-sm-2 control-label">JSON</label>
             <div class="col-sm-10">
@@ -141,47 +140,55 @@
     </div><!-- row -->
   </div> <!-- row -->
 
-  <div class="row"> <!-- row -->
-    <div class="col-md-4"> <!-- column -->
+  <div class="row"> <!-- outer row -->
+    <div class="col-sm-12"> <!-- column -->
       <legend>Details</legend>
-      <div class="form-group"> <!-- inputs -->
-        <label class="col-sm-2 control-label">Name</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" placeholder="URL name" ng-model="urlsCtrl.url.name">
-          <span class="help-block">This is a human readable name for the URL.</span>
+      <div class="row"> <!-- row -->
+        <div class="col-sm-6">
+          <div class="form-group"> <!-- inputs -->
+            <label class="col-sm-2 control-label">Name</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="URL name" ng-model="urlsCtrl.url.name">
+              <span class="help-block">This is a human readable name for the URL.</span>
+            </div>
+          </div> <!-- inputs -->
         </div>
-      </div> <!-- inputs -->
-      <div class="form-group"> <!-- inputs -->
-        <label class="col-sm-2 control-label">ID</label>
-        <div class="col-sm-10">
-          <input type="text" class="form-control" placeholder="URL unique ID" ng-model="urlsCtrl.url.id">
-          <span class="help-block">Unique ID for the URL. Don't change this unless you know what you're doing.</span>
+        <div class="col-sm-6">
+          <div class="form-group"> <!-- inputs -->
+            <label class="col-sm-2 control-label">ID</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" placeholder="URL unique ID" ng-model="urlsCtrl.url.id">
+              <span class="help-block">Unique ID for the URL. Don't change this unless you know what you're doing.</span>
+            </div>
+          </div> <!-- inputs -->
         </div>
-      </div> <!-- inputs -->
+      </div> <!-- row -->
     </div> <!-- column -->
+  </div> <!-- outer row -->
 
-    <div class="col-md-4"> <!-- column -->
+  <div class="row"> <!-- row -->
+    <div class="col-sm-4"> <!-- column -->
       <legend>Data Types</legend>
       <div class="form-group"> <!-- inputs -->
         <div class="col-sm-12">
           <div class="row"> <!-- add key row -->
-            <div class="col-md-2">
+            <div class="col-sm-2">
               <button type="button" class="btn btn-primary btn-block" title="Add new data type"
                 ng-click="urlsCtrl.addNewDt(newDataType); newDataType = ''; urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-plus-sign"></span>
               </button>
             </div>
-            <div class="col-md-10">
+            <div class="col-sm-10">
               <input type="text" class="form-control" ng-model="newDataType" placeholder="Data type name">
             </div>
           </div>  <!-- add key row -->
           <div class="row key-row" ng-repeat="dataType in urlsCtrl.url.dataTypes"> <!-- key row -->
-            <div class="col-md-2">
+            <div class="col-sm-2">
               <button class="btn btn-danger btn-sm btn-block" title="Remove data type" ng-click="urlsCtrl.removeDt(dataType); urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-remove"></span>
               </button>
             </div>
-            <div class="col-md-10">
+            <div class="col-sm-10">
               <input type="text" class="form-control input-sm" ng-model="dataType">
             </div>
           </div> <!-- key row -->
@@ -189,40 +196,77 @@
       </div> <!-- inputs -->
     </div> <!-- column -->
 
-    <div class="col-md-4"> <!-- column -->
+    <div class="col-sm-4"> <!-- column -->
       <legend>URL Parameters</legend>
       <div class="form-group"> <!-- inputs -->
         <label class="col-sm-2 control-label">Query String</label>
         <div class="col-sm-10">
           <div class="row"> <!-- add key row -->
-            <div class="col-md-2">
+            <div class="col-sm-2">
               <button type="button" class="btn btn-primary btn-block" title="Add New Query String"
                 ng-click="urlsCtrl.addNewQs(newKey, newValue); newKey=''; newValue=''; urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-plus-sign"></span>
               </button>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
               <input type="text" class="form-control" ng-model="newKey" placeholder="Key">
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <input type="text" class="form-control" ng-model="newValue" placeholder="Value">
             </div>
           </div>  <!-- add key row -->
           <div class="row key-row" ng-repeat="(qsKey, qsValue) in urlsCtrl.url.qs"> <!-- key row -->
-            <div class="col-md-2">
+            <div class="col-sm-2">
               <button class="btn btn-danger btn-sm btn-block" title="Remove parameter" ng-click="urlsCtrl.removeQs(qsKey); urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-remove"></span>
               </button>
             </div>
-            <div class="col-md-4">
+            <div class="col-sm-4">
               <input ng-disabled="true" type="text" class="form-control input-sm" ng-model="qsKey">
             </div>
-            <div class="col-md-6">
+            <div class="col-sm-6">
               <input type="text" class="form-control input-sm" ng-model="qsValue" ng-change="urlsCtrl.updateQs(qsKey, qsValue);">
             </div>
           </div> <!-- key row -->
         </div>
       </div> <!-- inputs -->
     </div> <!-- column -->
+
+    <div class="col-sm-4"> <!-- column -->
+      <legend>Variables</legend>
+      <div class="form-group"> <!-- inputs -->
+        <label class="col-sm-2 control-label">Variable</label>
+        <div class="col-sm-10">
+          <div class="row"> <!-- add key row -->
+            <div class="col-sm-2">
+              <button type="button" class="btn btn-primary btn-block" title="Add New Variable"
+                ng-click="urlsCtrl.updateVar(newVKey, newVValue); newVKey=''; newVValue=''; urlsCtrl.unsaved();">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+              </button>
+            </div>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" ng-model="newVKey" placeholder="Key">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" ng-model="newVValue" placeholder="Value">
+            </div>
+          </div>  <!-- add key row -->
+          <div class="row key-row" ng-repeat="(vKey, vValue) in urlsCtrl.url.vars"> <!-- key row -->
+            <div class="col-sm-2">
+              <button class="btn btn-danger btn-sm btn-block" title="Remove variable" ng-click="urlsCtrl.removeVar(vKey); urlsCtrl.unsaved();">
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
+            </div>
+            <div class="col-sm-4">
+              <input ng-disabled="true" type="text" class="form-control input-sm" ng-model="vKey">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control input-sm" ng-model="vValue" ng-change="urlsCtrl.updateVar(vKey, vValue);">
+            </div>
+          </div> <!-- key row -->
+        </div>
+      </div> <!-- inputs -->
+    </div> <!-- column -->
   </div> <!-- row -->
+
 </form>
