@@ -167,78 +167,39 @@
   </div> <!-- outer row -->
 
   <div class="row"> <!-- row -->
-    <div class="col-sm-4"> <!-- column -->
+    <div class="col-sm-6"> <!-- column -->
       <legend>Data Types</legend>
       <div class="form-group"> <!-- inputs -->
         <div class="col-sm-12">
           <div class="row"> <!-- add key row -->
-            <div class="col-sm-2">
+            <div class="col-xs-2">
               <button type="button" class="btn btn-primary btn-block" title="Add new data type"
                 ng-click="urlsCtrl.addNewDt(newDataType); newDataType = ''; urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-plus-sign"></span>
               </button>
             </div>
-            <div class="col-sm-10">
+            <div class="col-xs-10">
               <input type="text" class="form-control" ng-model="newDataType" placeholder="Data type name">
             </div>
           </div>  <!-- add key row -->
           <div class="row key-row" ng-repeat="dataType in urlsCtrl.url.dataTypes"> <!-- key row -->
-            <div class="col-sm-2">
+            <div class="col-xs-2">
               <button class="btn btn-danger btn-sm btn-block" title="Remove data type" ng-click="urlsCtrl.removeDt(dataType); urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-remove"></span>
               </button>
             </div>
-            <div class="col-sm-10">
+            <div class="col-xs-10">
               <input type="text" class="form-control input-sm" ng-model="dataType">
             </div>
           </div> <!-- key row -->
         </div>
       </div> <!-- inputs -->
-    </div> <!-- column -->
-
-    <div class="col-sm-4"> <!-- column -->
-      <legend>URL Parameters</legend>
-      <div class="form-group"> <!-- inputs -->
-        <label class="col-sm-2 control-label">Query String</label>
-        <div class="col-sm-10">
-          <div class="row"> <!-- add key row -->
-            <div class="col-sm-2">
-              <button type="button" class="btn btn-primary btn-block" title="Add New Query String"
-                ng-click="urlsCtrl.addNewQs(newKey, newValue); newKey=''; newValue=''; urlsCtrl.unsaved();">
-                <span class="glyphicon glyphicon-plus-sign"></span>
-              </button>
-            </div>
-            <div class="col-sm-4">
-              <input type="text" class="form-control" ng-model="newKey" placeholder="Key">
-            </div>
-            <div class="col-sm-6">
-              <input type="text" class="form-control" ng-model="newValue" placeholder="Value">
-            </div>
-          </div>  <!-- add key row -->
-          <div class="row key-row" ng-repeat="(qsKey, qsValue) in urlsCtrl.url.qs"> <!-- key row -->
-            <div class="col-sm-2">
-              <button class="btn btn-danger btn-sm btn-block" title="Remove parameter" ng-click="urlsCtrl.removeQs(qsKey); urlsCtrl.unsaved();">
-                <span class="glyphicon glyphicon-remove"></span>
-              </button>
-            </div>
-            <div class="col-sm-4">
-              <input ng-disabled="true" type="text" class="form-control input-sm" ng-model="qsKey">
-            </div>
-            <div class="col-sm-6">
-              <input type="text" class="form-control input-sm" ng-model="qsValue" ng-change="urlsCtrl.updateQs(qsKey, qsValue);">
-            </div>
-          </div> <!-- key row -->
-        </div>
-      </div> <!-- inputs -->
-    </div> <!-- column -->
-
-    <div class="col-sm-4"> <!-- column -->
       <legend>Variables</legend>
       <div class="form-group"> <!-- inputs -->
         <label class="col-sm-2 control-label">Variable</label>
         <div class="col-sm-10">
           <div class="row"> <!-- add key row -->
-            <div class="col-sm-2">
+            <div class="col-xs-2">
               <button type="button" class="btn btn-primary btn-block" title="Add New Variable"
                 ng-click="urlsCtrl.updateVar(newVKey, newVValue); newVKey=''; newVValue=''; urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-plus-sign"></span>
@@ -252,7 +213,7 @@
             </div>
           </div>  <!-- add key row -->
           <div class="row key-row" ng-repeat="(vKey, vValue) in urlsCtrl.url.vars"> <!-- key row -->
-            <div class="col-sm-2">
+            <div class="col-xs-2">
               <button class="btn btn-danger btn-sm btn-block" title="Remove variable" ng-click="urlsCtrl.removeVar(vKey); urlsCtrl.unsaved();">
                 <span class="glyphicon glyphicon-remove"></span>
               </button>
@@ -262,6 +223,42 @@
             </div>
             <div class="col-sm-6">
               <input type="text" class="form-control input-sm" ng-model="vValue" ng-change="urlsCtrl.updateVar(vKey, vValue);">
+            </div>
+          </div> <!-- key row -->
+        </div>
+      </div> <!-- inputs -->
+    </div> <!-- column -->
+
+    <div class="col-sm-6"> <!-- column -->
+      <legend>URL Parameters</legend>
+      <div class="form-group"> <!-- inputs -->
+        <label class="col-sm-2 control-label">Query String</label>
+        <div class="col-sm-10">
+          <div class="row"> <!-- add key row -->
+            <div class="col-xs-2">
+              <button type="button" class="btn btn-primary btn-block" title="Add New Query String"
+                ng-click="urlsCtrl.addNewQs(newKey, newValue); newKey=''; newValue=''; urlsCtrl.unsaved();">
+                <span class="glyphicon glyphicon-plus-sign"></span>
+              </button>
+            </div>
+            <div class="col-sm-4">
+              <input type="text" class="form-control" ng-model="newKey" placeholder="Key">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" ng-model="newValue" placeholder="Value">
+            </div>
+          </div>  <!-- add key row -->
+          <div class="row key-row" ng-repeat="(qsKey, qsValue) in urlsCtrl.url.qs"> <!-- key row -->
+            <div class="col-xs-2">
+              <button class="btn btn-danger btn-sm btn-block" title="Remove parameter" ng-click="urlsCtrl.removeQs(qsKey); urlsCtrl.unsaved();">
+                <span class="glyphicon glyphicon-remove"></span>
+              </button>
+            </div>
+            <div class="col-sm-4">
+              <input ng-disabled="true" type="text" class="form-control input-sm" ng-model="qsKey">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control input-sm" ng-model="qsValue" ng-change="urlsCtrl.updateQs(qsKey, qsValue);">
             </div>
           </div> <!-- key row -->
         </div>
