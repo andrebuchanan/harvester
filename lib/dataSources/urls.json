@@ -1,5 +1,16 @@
 {
   "HKG-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/departures",
     "dataTypes" : [ "fsfids" ],
@@ -10,21 +21,21 @@
       "portCode" : "HKG",
       "transition" : "DEP"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "HKG-DEP",
     "enabled" : false
   },
   "SYD-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -35,21 +46,21 @@
       "portCode" : "SYD",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "SYD-ARR",
     "enabled" : false
   },
   "JNB-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/JNB/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -60,21 +71,21 @@
       "portCode" : "JNB",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "JNB-ARR",
     "enabled" : false
   },
   "LHR-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/LHR/departures",
     "dataTypes" : [ "fsfids" ],
@@ -85,21 +96,21 @@
       "portCode" : "LHR",
       "transition" : "DEP"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "LHR-DEP",
     "enabled" : false
   },
   "AUH-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/AUH/departures",
     "dataTypes" : [ "fsfids" ],
@@ -110,21 +121,21 @@
       "portCode" : "AUH",
       "transition" : "DEP"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "AUH-DEP",
     "enabled" : false
   },
   "SIN-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/SIN/departures",
     "dataTypes" : [ "fsfids" ],
@@ -135,21 +146,21 @@
       "portCode" : "AUH",
       "transition" : "DEP"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "SIN-DEP",
     "enabled" : false
   },
   "MEL-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/MEL/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -160,21 +171,21 @@
       "portCode" : "MEL",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "MEL-ARR",
     "enabled" : false
   },
   "BNE-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/BNE/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -185,21 +196,21 @@
       "portCode" : "BNE",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "BNE-ARR",
     "enabled" : false
   },
   "LGW-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/LGW/departures",
     "dataTypes" : [ "fsfids" ],
@@ -209,17 +220,6 @@
     "vars" : {
       "portCode" : "LGW",
       "transition" : "DEP"
-    },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
     },
     "id" : "LGW-DEP",
     "enabled" : false
@@ -252,6 +252,17 @@
     "enabled" : false
   },
   "SYD-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/SYD/departures",
     "dataTypes" : [ "fsfids" ],
@@ -262,21 +273,18 @@
       "portCode" : "SYD",
       "transition" : "DEP"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "SYD-DEP",
     "enabled" : false
   },
   "otp-VA" : {
+    "qs" : {
+      "appId" : "76df9325",
+      "utc" : "true",
+      "appKey" : "88cc444ca545cefd97cd061ac8bd52bf",
+      "numHours" : "24",
+      "extendedOptions" : "useHttpErrors",
+      "codeshares" : "false"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/VA/dep/{y}/{m}/{d}/{h}",
     "dataTypes" : [ "fsotp" ],
@@ -318,6 +326,17 @@
     "enabled" : false
   },
   "HKG-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/HKG/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -328,21 +347,18 @@
       "portCode" : "HKG",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "HKG-ARR",
     "enabled" : false
   },
   "otp-JQ" : {
+    "qs" : {
+      "appId" : "76df9325",
+      "utc" : "true",
+      "appKey" : "88cc444ca545cefd97cd061ac8bd52bf",
+      "numHours" : "24",
+      "extendedOptions" : "useHttpErrors",
+      "codeshares" : "false"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/JQ/dep/{y}/{m}/{d}/{h}",
     "dataTypes" : [ "fsotp" ],
@@ -356,6 +372,17 @@
     "enabled" : false
   },
   "JNB-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/JNB/departures",
     "dataTypes" : [ "fsfids" ],
@@ -366,21 +393,21 @@
       "portCode" : "JNB",
       "transition" : "DEP"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "JNB-DEP",
     "enabled" : false
   },
   "MEL-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/MEL/departures",
     "dataTypes" : [ "fsfids" ],
@@ -391,21 +418,21 @@
       "portCode" : "MEL",
       "transition" : "DEP"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "MEL-DEP",
     "enabled" : false
   },
   "LHR-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/LHR/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -416,21 +443,21 @@
       "portCode" : "LHR",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "LHR-ARR",
     "enabled" : false
   },
   "SIN-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/SIN/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -441,21 +468,18 @@
       "portCode" : "AUH",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "SIN-ARR",
     "enabled" : false
   },
   "otp-QF" : {
+    "qs" : {
+      "appId" : "76df9325",
+      "utc" : "true",
+      "appKey" : "88cc444ca545cefd97cd061ac8bd52bf",
+      "numHours" : "24",
+      "extendedOptions" : "useHttpErrors",
+      "codeshares" : "false"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/flightstatus/rest/v2/json/fleet/status/QF/dep/{y}/{m}/{d}/{h}",
     "dataTypes" : [ "fsotp" ],
@@ -469,6 +493,17 @@
     "enabled" : false
   },
   "AUH-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/AUH/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -479,21 +514,21 @@
       "portCode" : "AUH",
       "transition" : "ARR"
     },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
-    },
     "id" : "AUH-ARR",
     "enabled" : false
   },
   "BNE-DEP" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/BNE/departures",
     "dataTypes" : [ "fsfids" ],
@@ -503,17 +538,6 @@
     "vars" : {
       "portCode" : "BNE",
       "transition" : "DEP"
-    },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
     },
     "id" : "BNE-DEP",
     "enabled" : false
@@ -529,6 +553,17 @@
     "enabled" : false
   },
   "LGW-ARR" : {
+    "qs" : {
+      "timeFormat" : "24",
+      "includeCodeshares" : false,
+      "timeWindowEnd" : 360,
+      "excludeCargoOnlyFlights" : true,
+      "timeWindowBegin" : 360,
+      "appId" : "9a4d901f",
+      "appKey" : "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
+      "extendedOptions" : "useHttpErrors",
+      "requestedFields" : "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF"
+    },
     "deleted" : false,
     "url" : "https://api.flightstats.com/flex/fids/rest/v1/json/LGW/arrivals",
     "dataTypes" : [ "fsfids" ],
@@ -538,17 +573,6 @@
     "vars" : {
       "portCode" : "LGW",
       "transition" : "ARR"
-    },
-    "qs": {
-      "appId": "9a4d901f",
-      "appKey": "98e07a6c234fd4bcbf01c5c2ebbfe3dc",
-      "requestedFields": "flightId,lastUpdatedTimeUtc,lastUpdatedDateUtc,dayOffset,statusCode,airlineName,airlineCode,flightNumber,isCodeshare,operatedFlightNumber,operatingAirlineName,operatingAirlineCode,destinationAirportName,destinationAirportCode,destinationCity,destinationFamiliarName,destinationStateCode,destinationCountryCode,flight,delayed,remarks,remarksWithTime,remarksCode,airportCode,airportName,city,gate,terminal,scheduledTime,scheduledDate,estimatedTime,estimatedDate,actualTime,actualDate,currentTime,currentDate,scheduledGateTime,scheduledGateDate,estimatedGateTime,estimatedGateDate,actualGateTime,actualGateDate,currentGateTime,currentGateDate,codesharesAsCodes,uplineAirportCodes,downlineAirportCodes,weather,temperatureC,temperatureF",
-      "timeFormat": "24",
-      "excludeCargoOnlyFlights": true,
-      "includeCodeshares": false,
-      "timeWindowBegin": 360,
-      "timeWindowEnd": 360,
-      "extendedOptions": "useHttpErrors"
     },
     "id" : "LGW-ARR",
     "enabled" : false
