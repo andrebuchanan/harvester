@@ -545,12 +545,12 @@
   "fraircraft" : {
     "deleted" : false,
     "url" : "http://www.flightradar24.com/zones/full_all.json",
-    "dataTypes" : [ "fraircraft" ],
+    "dataTypes" : [ "track" ],
     "name" : "Flight Equip",
     "cron" : "* */2 * * * *",
     "json" : true,
     "id" : "fraircraft",
-    "enabled" : false
+    "enabled" : true
   },
   "LGW-ARR" : {
     "qs" : {
