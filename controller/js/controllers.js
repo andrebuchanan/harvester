@@ -135,6 +135,7 @@ angular.module('hcontroller.controllers', ["firebase"]).
 
     this.addNewDt = function(newDt)
     {
+      if (!this.url.dataTypes) this.url.dataTypes = [];
       this.url.dataTypes.push(newDt);
     };
 
